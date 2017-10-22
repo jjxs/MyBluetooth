@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.mybluetooth.MainActivity">
+
+    <TextView
+        android:gravity="center_vertical"
+        android:textColor="@color/textColorSecondary"
+        android:textSize="14sp"
+        android:paddingLeft="16dp"
+        android:background="@color/colorGrayTertiary"
+        android:text="选择一个需要配对的设备"
+        android:layout_width="match_parent"
+        android:layout_height="48dp" />
+
+    <ListView
+        android:background="@color/colorWhite"
+        android:id="@+id/listView_blue"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:choiceMode="singleChoice"
+        android:divider="@android:drawable/divider_horizontal_bright">
+    </ListView>
+
+    <Button
+        android:id="@+id/btn_goto_setting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/common_margin"
+        android:layout_marginRight="@dimen/common_margin"
+        android:layout_marginTop="@dimen/common_margin"
+        android:text="还未配对打印机，去设置" />
+</LinearLayout>
